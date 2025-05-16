@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Outfit;
+  scroll-behavior: smooth;
+}
+body{
+  min-height: 100vh;
+  /* background-color: #fffff0; */
+  background-color: #faf9f6;
+}
+.app{
+  width: 80%;
+  margin: auto;
+}
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background:tomato;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+@keyframes fadIn {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}

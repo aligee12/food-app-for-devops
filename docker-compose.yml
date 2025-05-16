@@ -1,0 +1,23 @@
+version: "3.8"
+services:
+  backend:
+    build: ./backend
+    container_name: back1
+    ports:
+      - "5000:5000"
+    restart: always
+    environment:
+      - JWT_SECRET=random#secret
+      - STRIPE_SECRET_KEY=sk_test_4eC39HqLyjWDarjtT1zdp7dc
+      - MONGO_URI=mongodb+srv://itzsyed1212:itzsyed12@cluster0.roxpiqj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+
+  frontend:
+    build: ./frontend
+    container_name: front1
+    ports:
+      - "3000:3000"
+    restart: always
+    depends_on:
+      - backend
+    environment:
+      - VITE_PUBLIC_URL=http://16.171.54.54:5000

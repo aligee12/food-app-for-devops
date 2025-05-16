@@ -1,0 +1,96 @@
+.cart{
+    margin-top: 100px;
+}
+.cart-items-title{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    color: grey;
+    font: max(1vw,12px);        /*responsive size*/
+}
+.cart-items-item{
+    margin: 10px 0px;
+    color: black;
+}
+.cart-items-item img{
+    width: 50px;
+}
+.cart hr{
+    height: 1px;
+    border: none;
+    background-color: #cecdcd;
+}
+.cart-items-item{
+    cursor: pointer;
+}
+
+/* ########### second section ############### */
+.cart-bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    gap: max(12vw,20px);         /*responsive size*/
+}
+.cart-total{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.cart-total .cart-total-details{
+    display: flex;
+    justify-content: space-between;
+    color: #555;
+}
+.cart-total hr{
+    margin: 10px 0px;
+}
+.cart-total button{
+    border: none;
+    color: white;
+    background-color: tomato;
+    width: max(15vw,200px);          /*responsive size*/
+    padding: 12px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cart-bottom .cart-promocode{
+    flex: 1;
+}
+.cart-bottom .cart-promocode p{
+    color: #555;
+}
+.cart-bottom .cart-promocode .cart-promocode-input{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eaeaea;
+    border-radius: 4px;
+}
+.cart-promocode-input input{
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    background: transparent;
+}
+.cart-promocode-input button{
+    width: max(12vw,150px);          /*responsive size*/
+    padding: 12px 5px;  
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* ############### Media Querries ##################### */
+@media (max-width:750px) {
+    .cart-bottom{
+        flex-direction: column-reverse;
+    }
+    .cart-promocode{
+        justify-content: start;
+    }
+}
