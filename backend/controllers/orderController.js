@@ -8,7 +8,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 //placing user order from frontend
 const placeOrder = async (req, res) => {
-  const frontend_url = "http://16.171.54.54:3000";
+  const frontend_url = "http://16.171.54.54:3001";
 
   try {
     //for saving order data to database
