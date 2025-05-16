@@ -4,9 +4,9 @@ pipeline {
     stages {
         stage('Clone Code') {
             steps {
-                git branch: 'main', // <-- Specify the branch here
+                git branch: 'main',
                     url: 'https://github.com/aligee12/food-app-for-devops.git'
-                // Remove credentialsId parameter if you don't want to provide credentials
+                
             }
         }
 

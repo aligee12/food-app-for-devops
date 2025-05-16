@@ -8,7 +8,7 @@ services:
     restart: always
     environment:
       - JWT_SECRET=random#secret
-      - STRIPE_SECRET_KEY=sk_test_4eC39HqLyjWDarjtT1zdp7dc
+      - STRIPE_SECRET_KEY=sk_test_51Pue0T03gkpmcZw2xcDKsPtsOIs3ptG2mCosHsCkqhrnqiqSssTu5iKMPAXap3XvEPw08Cz4Su6wYOgGBfFxNrqY00wYvAo48T
       - MONGO_URI=mongodb+srv://itzsyed1212:itzsyed12@cluster0.roxpiqj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
 
   frontend:
