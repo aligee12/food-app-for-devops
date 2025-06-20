@@ -21,3 +21,4 @@ services:
       - backend
     environment:
       - VITE_PUBLIC_URL=http://16.171.54.54:5001
+
